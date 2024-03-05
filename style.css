@@ -1,0 +1,308 @@
+
+body {
+    margin: 0;
+    padding-top: 70px;
+}
+/*------------------------NAV BAR   NAV BAR----------------------------*/
+
+nav {
+     border-bottom: 1px solid black;
+}
+.logo img {
+    height: 70px; /* altura aprox que me gustaria del logo */
+}
+.navbar-brand {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: red;
+}
+.nav-link{
+    color:red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+/* ------------------------ MEDIA QUERYS NAV BAR ---------------------------------------- */
+
+@media only screen and (max-width: 600px) {
+    .logo img {
+        height: 50px;
+    }
+    .navbar-brand {
+        display: none;
+    }
+}
+/* ----------------------------FIN MEDIA QUERYS NAV BAR ----------------------------------- */
+
+/*--------------------------------------------------------------------------*/
+
+/* ESTILOS PARA EL CONTENIDO DE INDEX.HTML */
+
+
+.intro_empresa_container{
+    background-image: url(images/background_option2.png);
+    background-size: 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column; 
+}
+.intro_empresa_container h1 {
+    color: #f6dade;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.intro_empresa_container a {
+
+    color:black;
+    text-decoration: none;
+}
+.intro_empresa_container button {
+    background-color: red;
+    border: none;
+}
+
+.intro_empresa_container p {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 3.5;
+    color: black;
+}
+.container_preguntas { 
+    border: 1px solid black;
+}
+.container_preguntas h3 { 
+    padding-top: 20px;
+    height: 60px;
+    text-align: center;
+}
+/*--------------------------------------------------------------------*/
+
+
+/*----------------------- ESTILOS PARA COMPANY.HTML-------------------*/
+
+.presentacion {
+    background-color:chocolate; /*aca iria una imagen  de fondo */
+    height: 445px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.parrafo {
+   font-size: 20px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-style: italic;
+}
+.link_plan_cobertura a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    border: 1px solid #333;
+} 
+
+/*--------------------------------------------------------------------------------------------*/
+
+/*----------------  ESTILOS PARA PLANS.HTML  ---------------------------------------*/
+.productos {
+    border: 1px solid black;
+    background-color: aquamarine;
+    height: 445px;   
+    text-align: center;
+}
+.productos h1 {
+    border: 1px solid black;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+.productos_container { 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px;       
+}
+.lista { 
+    padding:5px;
+    border: 1px solid black;
+  
+}
+.lista li { 
+    margin-right: 30px;
+    list-style: none; 
+}
+/*---------------------------------------------------------------------------*/ 
+
+/*--------- ESTILOS PARA COVERAGE.HTML -------------------------------*/ 
+
+.cobertura_container {
+    position: relative;
+    top: 17px;
+    text-align: center;
+    height: 650px;
+    background-color: white;
+    
+}
+.cobertura_container iframe {
+    height: 75%;
+    width: 75%;
+    border: 10px solid #f6dade;
+}
+.cobertura_container h1 {
+    margin-top: 20px;
+    color: red;
+}
+.cobertura_container button {
+    background-color: #d3455b;
+    font-size: 15px;
+    padding-top: 0px;
+    position: relative;
+    bottom: 10px;
+}
+.cobertura_container p {
+    font-size: 20px;
+    font-weight: bold;
+}
+/* --------- MEDIA QUERYS COVERAGE ------------------- */
+@media only screen and (max-width: 600px) {
+    .cobertura_container p {
+        padding: 1px;
+        font-size: 17px;
+        text-align:center;
+    }
+    .cobertura_container iframe {
+        height: 70%;
+        width: 85%;
+    }
+    .cobertura_container button {
+        display: none;
+    }
+    .cobertura_container h1 {
+        margin-top: -3px;
+    }
+}
+
+/* ---------------------------------------------------- */
+
+/*----------------------------------------------------------------------------------*/
+
+/*----------------- ESTILOS PARA CONTACT.HTML ----------------------------*/
+.contact_preguntas { 
+    padding:25px;
+    background-color: blueviolet;
+    height: 397px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.form_container {
+    margin-left: 20px;
+    text-align: left;
+    border: 1px solid black;
+}
+.form_container h2 {
+    text-align: center;
+}
+.medios_container {
+    padding: 30px;
+    height: 300px;
+    border: 1px solid black;
+
+}
+.preguntas_container { 
+    text-align: center;
+    height: 350px;
+    border: 1px solid black;
+}
+.preguntas_container li {
+    list-style: none;
+    font-size: 20px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+
+
+/*-----------------FOOTER     FOOTER    FOOTER-----------------------  */
+footer {
+    background-color: #f6dade;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    bottom: 0;
+    height: 105px;
+    width: 100%;
+   
+}
+.logo_container  img {
+    height: 100px;
+}
+.links_container { 
+    text-align: center;
+    position: relative;
+    right:20px ;
+    background-color: red;
+    position: relative;
+    height: 105px;
+    width: 120px;
+}
+.contact_container {
+    text-align: center;
+    height: 105px;
+    width: 120px;
+    background-color: red;
+    position: relative;
+}
+.link_contacto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+footer h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+
+}
+/*
+.list_links {
+    list-style-type:circle;
+    padding: 0;
+}
+.list_links a {
+    display: flex;
+    padding-bottom: 5px;
+}
+
+.link_contacto { 
+    list-style: none;
+    padding: 0;
+}
+.link_contacto a {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    
+}
+
+*/
+.icono {
+    height: 15px; /* altura iconos*/
+    margin-right: 10px; /*separacion entre el texto*/
+} 
+/* ------------ MEDIA QUERYS FOOTER  */
+@media only screen and (max-width: 600px) {
+    .logo_container img {
+        display: none;
+    }
+}
+ /*-----------------------------------------------------------*/
