@@ -6,19 +6,31 @@ body {
 
 nav {
      border-bottom: 1px solid black;
+     #portal{
+        color: #0c0c0cd7;
+        button { 
+            border-radius: 7px;
+            cursor: pointer;
+            transition: transform 0.6s ease; /* Transición suave de la transformación */
+        }
+        button:hover {
+            transform: scale(1.1);
+        }
+     }
 }
 .logo img {
     height: 70px; /* altura aprox que me gustaria del logo */
 }
 .navbar-brand {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: bold;
     color: red;
 }
 .nav-link{
     color:red;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 21px;
 }
 // media querys // 
 @media only screen and (max-width: 600px) {
@@ -35,28 +47,37 @@ nav {
 
 .intro_empresa_container{
     /* IMGEN DE FONDO */
-    background-image: url(images/background_option2.png);
-    background-size: 100%;
-    background-position: right;
+    background-image: url(images/backdos.png);
+    background-color: #fcf8f8;
     background-repeat: no-repeat;
+    background-position: 400px 0px;
+    background-size: 70% 100%;
+    background-attachment: scroll;
     /* -------------- */
-    height: 510px;
-    margin-bottom: 30px;
+    height: 490px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
     flex-direction: column; 
+    .content, #content{
+        margin-right: 500px;
+    }
     h1 {
-        color: red;
-        font-size: 35px;
-        font-family: Arial, Helvetica, sans-serif;
+        display: inline-block;
+        
+        color: black;
+        font-size: 45px;
+        font-family:sans-serif;
     }
     a{
-        color:black;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
         text-decoration: none;
     }
     button {
-        background-color: red;
+        background-color: rgb(133, 132, 132);
         border: none;
         cursor: pointer;
         transition: transform 0.6s ease; /* Transición suave de la transformación */
@@ -65,10 +86,12 @@ nav {
         transform: scale(1.1);
     }
     p{
-        font-size: 18px;
-         font-weight: bold;
-         line-height: 3.5;
-          color: black;
+        color: red;
+        text-decoration: solid;
+        background-color:transparent;
+        font-size: 21px;
+        font-weight: bold;
+        line-height: 2.5;
     }
 }
 .container_preguntas { 
@@ -80,6 +103,9 @@ nav {
          padding-top: 10px;
          height: 60px;
          text-align: center;
+    }
+    .accordion-button{
+        color: rgb(248, 105, 105);
     }
 } 
 // querys media
@@ -145,24 +171,35 @@ nav {
 
 // plans.html // 
 .productos {
+    
     padding-top: 50px;
     margin-top: 15px;
-    border: 1px solid black;
-    background-color: aquamarine;
-    height: 445px;   
+    background-color: rgba(252, 252, 252, 0.781);
+       
     text-align: center;
     h1 {
-        border: 1px solid black;
-        padding:10px;
+        color: rgb(243, 9, 9);
+        margin-bottom: 50px;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+    .card {
+        img{
+            height: 250px;
+        }
+    }
+    .card-body{
+        background-color: #f3082b;
     }
 }
 .productos_container { 
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 100px;       
+    margin: 100px; 
+    height: auto;
+         
 }
 .lista { 
     padding:5px;
@@ -260,7 +297,7 @@ nav {
 
 //footer //
 footer {
-    background-image: url(images/banner_disenoplanif.jpg);
+    background-image: url(images/footer.jpg);
     background-size: 100%;
     background-position: right;
     background-repeat: no-repeat;
@@ -347,6 +384,7 @@ footer {
     }
     .list_links a , .link_contacto a {
         font-size: 10px;
+        font-weight: bold;
     }
     .links_container ,  .contact_container {
         border: 1px solid red;
