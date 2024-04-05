@@ -134,7 +134,7 @@ nav #portal button:hover {
   }
 }
 .presentacion {
-  background-image: url(../images/backCompanyPre.jpg);
+  background-image: url(images/backCompanyPre.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 585px;
@@ -197,7 +197,7 @@ nav #portal button:hover {
 
 .productos {
   background-size: cover;
-  background-image: url(../images/backPlanes.webp);
+  background-image: url(images/backPlanes.webp);
   background-repeat: no-repeat;
   border: 1px black solid;
   padding-top: 50px;
@@ -303,7 +303,7 @@ nav #portal button:hover {
   margin-top: 19px;
   margin-bottom: 4px;
   padding: 25px;
-  background-image: url(../images/background_contact.jpg);
+  background-image: url(images/background_contact.jpg);
   background-size: cover;
   width: 100%;
   height: 540px;
