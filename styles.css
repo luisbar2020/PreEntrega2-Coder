@@ -332,6 +332,9 @@ nav #portal button:hover {
 }
 
 @media (max-width: 600px) {
+  .productos .card {
+    margin-left: 55px;
+  }
   .productos h1 {
     font-size: 22px;
   }

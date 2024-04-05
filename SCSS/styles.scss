@@ -345,7 +345,11 @@ nav {
 }
 //querys plans//
 @media (max-width: 600px) {
+    
     .productos{
+        .card {
+            margin-left: 55px;
+        }
         h1{
             font-size: 22px;
             
