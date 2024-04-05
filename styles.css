@@ -134,12 +134,37 @@ nav #portal button:hover {
   }
 }
 .presentacion {
-  background-image: url(../images/background_company);
-  height: 445px;
+  background-image: url(../images/backCompanyPre.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 585px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.presentacion .container-presentacion {
+  position: relative;
+  left: 360px;
+  width: 560px;
+  height: 480px;
+  display: flex;
+  align-items: center;
   flex-direction: column;
+  background-color: rgba(209, 170, 170, 0.404);
+}
+.presentacion .container-presentacion h1 {
+  background-color: rgba(0, 0, 0, 0.368627451);
+  color: #d3455b;
+  font-size: 45px;
+}
+.presentacion .container-presentacion p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: initial;
+  text-align: center;
+  font-weight: bold;
+  line-height: 2.5;
 }
 .presentacion button {
   background-color: #d3455b;
@@ -148,6 +173,8 @@ nav #portal button:hover {
   transition: transform 0.6s ease; /* Transición suave de la transformación */
 }
 .presentacion button a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
   color: black;
   text-decoration: none;
 }
@@ -169,23 +196,44 @@ nav #portal button:hover {
 }
 
 .productos {
+  background-size: cover;
+  background-image: url(../images/backPlanes.webp);
+  background-repeat: no-repeat;
+  border: 1px black solid;
   padding-top: 50px;
   margin-top: 15px;
-  background-color: rgba(252, 252, 252, 0.781);
   text-align: center;
 }
+.productos h4 {
+  font-size: 18px;
+  color: red;
+  position: relative;
+  bottom: 90px;
+  background-color: rgba(114, 106, 106, 0.0666666667);
+}
 .productos h1 {
+  position: relative;
+  bottom: 20px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.623);
   color: rgb(243, 9, 9);
   margin-bottom: 50px;
+  padding-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 40px;
+  font-weight: bold;
+}
+.productos .card h5 {
+  color: red;
+}
+.productos .card p {
   font-weight: bold;
 }
 .productos .card img {
   height: 250px;
 }
 .productos .card-body {
-  background-color: #f3082b;
+  background-color: #f7a8b5;
 }
 
 .productos_container {
