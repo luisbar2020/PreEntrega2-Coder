@@ -37,8 +37,14 @@ nav {
     .logo img {
         height: 50px;
     }
+    
     .navbar-brand {
         display: none;
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .navbar-brand {
+        font-size: 13px;
     }
 }
 
@@ -60,12 +66,11 @@ nav {
     justify-content: center;
     text-align: center;
     flex-direction: column; 
-    .content, #content{
+    .content {
         margin-right: 500px;
     }
     h1 {
-        display: inline-block;
-        
+        display: inline-block; 
         color: black;
         font-size: 45px;
         font-family:sans-serif;
@@ -109,25 +114,65 @@ nav {
     }
 } 
 // querys media
-@media only screen and (max-width: 600px) { 
+@media (max-width: 600px) { 
     .intro_empresa_container {
+        max-width: 100%; /* Establecemos un ancho máximo */
+       
+        display: flex;
+        text-align: center;
+        justify-content: center;
         background-image: none;
-        background-color:rgb(245, 243, 243);
+       
+        .content{
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+            
+        }
         h1{
+            margin-top: 10px;
+            background-color: #f7a8b5;
+            font-size: 23px;
+            font-weight: bold;
             color: red;
             font-family: Arial, Helvetica, sans-serif;
         }
         p{
-            margin: 8px; 
+            text-align: center;
+            font-size: 20px;
+            line-height: 3.5;
+             
         }
         button {
-            background-color:rgb(115, 113, 117);
-            width: 50%;
-            margin: 0 auto;
+            
+            background-color:rgb(228, 192, 192);
+           
             a{
                 color:black;
+                font-weight: bold;
                 font-family: Arial, Helvetica, sans-serif;
-                font-size: 16px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px){
+    .intro_empresa_container{
+        background-position-x: 220px;
+        .content {
+            position: relative;
+            left: 35px;
+        }
+        h1{
+            font-size: 28px;
+        }
+        p{
+            font-size: 17px;
+        }
+        button {
+            width: 90px;
+            a{
+                font-size: 11.5px;
             }
         }
     }
@@ -143,6 +188,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     
     .container-presentacion{
         position: relative;
@@ -183,19 +229,60 @@ nav {
     button:hover {
         transform: scale(1.1);
     }
+    .parrafo {
+        font-size: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+     }
+     .link_plan_cobertura a {
+         text-decoration: none;
+         padding: 10px;
+         font-size: 20px;
+         border: 1px solid #333;
+     } 
        
 }
-.parrafo {
-   font-size: 20px;
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   font-style: italic;
+@media (max-width: 600px) {
+    .presentacion{
+        max-width: 100%;
+        background-image: url(../images/backPhone.jpg);
+        .container-presentacion {
+            background-color: transparent;
+            width: 100%;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            line-height: 3;
+             h1{
+                background-color: #dfe6da8a;
+                font-size: 20px;
+                font-weight: bold;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            p{
+                font-size: 16.5px;
+            }   
+        }
+    }
 }
-.link_plan_cobertura a {
-    text-decoration: none;
-    padding: 10px;
-    font-size: 20px;
-    border: 1px solid #333;
-} 
+
+@media(min-width: 768px) and (max-width: 1023px) {
+    .presentacion{
+        max-width: 100%;
+        .container-presentacion{
+            position: relative;
+            left: 50%;
+            transform: translateX(-66%);
+            background-color: #f3eeefb0;
+            .parrafo p{
+                font-size: 20px;
+            }
+            .title h1{
+                font-size: 34px;
+            }
+        }
+     }  
+}
 
 // plans.html // 
 .productos {
@@ -255,6 +342,35 @@ nav {
         margin-right: 30px;
         list-style: none; 
      }
+}
+//querys plans//
+@media (max-width: 600px) {
+    .productos{
+        h1{
+            font-size: 22px;
+            
+        }
+        h4{
+            background-color: #e2dfdfcc;
+            font-size: 16px;
+            text-align: center;
+        }
+ 
+    }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+    .productos {
+        h1 {
+            margin-top: 10px;
+            font-size: 25px;
+        }
+        h4{
+            font-size: 17px;
+        }
+    }
+    .card {
+        max-width: 100%;
+    }
 }
 
 // coverage.html //
@@ -413,38 +529,31 @@ footer {
 }
 // media query footer //
 /* ------------ MEDIA QUERYS FOOTER  */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .logo_container img {
         display: none;
     }
     footer {
-        display: flex;  
+        display: flex;
+        h3{
+            font-size: 14px;
+            background-color: #f5f2f2;
+        }
         background-image: none;
-        background-color: rebeccapurple;
-        height: 150px;
-    }
-    footer h3 {
-        font-size: 15px;
-    }
-    .list_links ul {
-        padding-top: 50px;
-    }
-    .list_links a , .link_contacto a {
-        font-size: 10px;
-        font-weight: bold;
-    }
-    .links_container ,  .contact_container {
-        border: 1px solid red;
-        width: 150px;
-        height: 150px;
-        background-color: aqua;
-    }
-    .contact_container {
-        position: absolute;
-        left: 10px;
-    }
-    .links_container {
-        position: absolute;
-        right: 10px;
-    }
+        .list_links a , .link_contacto a {
+            font-size: 10px;
+            line-height: 2.5;
+        }
+        .links_container ,  .contact_container {
+            flex-grow: 1;
+            width: 50%;
+            border: 1px solid rgb(3, 3, 3);
+            background-color: rgb(247, 150, 150);
+        }
+        .links_container {
+            position: relative;
+            left: 0.5px
+        }
+        
+    }  
 }
